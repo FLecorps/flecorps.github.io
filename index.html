@@ -17,6 +17,10 @@
         list-style-type: circle;
     }
 
+    .div-links ul li {
+        padding:4px;
+    }
+
 	.div-links > div:not(:last-child) {
 		border-right: 1px solid gray;
 	}
@@ -26,19 +30,24 @@
 
 
 <body>
+
+<!--my-link href="www.abacus.ch"><span slot="link-text">ABACUS</span></my-link-->
+
 <div class="div-links">
 <div>
     <section>
 		<h3>News</h3>
 		<ul>
-			<li><a href="https://theguardian.com/" target="_new" rel="noopener noreferrer">GUARDIAN</a></li>
+            <li><a href="https://theguardian.com/" target="_new" rel="noopener noreferrer">Guardian</a></li>
+            <li><a href="https://www.monde-/" target="_new" rel="noopener noreferrer">Monde Diplo</a></li>
+            <li><a href="https://lepoint.fr/" target="_new" rel="noopener noreferrer">Le Point</a></li>
 		</ul>
 	</section>
 	<section>
 		<h3>Tech</h3>
 		<ul>
 			<li><a href="https://news.ycombinator.com/" target="_new" rel="noopener noreferrer">HN</a></li>
-			<li><a href="https://skimfeed.com/" target="_new" rel="noopener noreferrer">SKIMFEED</a></li>
+			<li><a href="https://skimfeed.com/" target="_new" rel="noopener noreferrer">Skimfeed</a></li>
 		</ul>
 	</section>
 </div>
@@ -47,7 +56,8 @@
 	<section>
 		<h3>Quality sites</h3>
 		<ul>
-			<li><a href="https://tetw.org/" target="_new" rel="noopener noreferrer">GREAT ARTICLES</a></li>
+			<li><a href="https://tetw.org/" target="_new" rel="noopener noreferrer">Great Articles</a></li>
+            <li><a href="https://www.justonecookbook.com/recipes/" target="_new" rel="noopener noreferrer">One Cook Book</a></li>
 		</ul>
 	</section>
 </div>
@@ -56,14 +66,14 @@
 	<section>
 		<h3>Entertainment</h3>
 		<ul>
-			<li><a href="https://jalopnik.com/" target="_new" rel="noopener noreferrer">JALOPNIK</a></li>
+			<li><a href="https://jalopnik.com/" target="_new" rel="noopener noreferrer">Jalopnik</a></li>
 		</ul>
 	</section>
 
 	<section>
 		<h3>Games</h3>
 		<ul>
-			<li><a href="https://www.freetogame.com/games" target="_new" rel="noopener noreferrer">FREE GAMES</a></li>
+			<li><a href="https://www.freetogame.com/games" target="_new" rel="noopener noreferrer">Free Games</a></li>
 		</ul>
 	</section>
 </div>
@@ -72,10 +82,39 @@
 	<section>
 		<h3>Media</h3>
 		<ul>
-			<li><a href="https://1lib.eu/" target="_new" rel="noopener noreferrer">BOOKS</a></li>
-			<li><a href="https://www.youtube.com/watch?v=AgpWX18dby4/" target="_new" rel="noopener noreferrer">10 HOURS OCEAN</a></li>
+			<li><a href="https://1lib.eu/" target="_new" rel="noopener noreferrer">Free Books</a></li>
+			<li><a href="https://www.youtube.com/watch?v=AgpWX18dby4/" target="_new" rel="noopener noreferrer">10 Hours Ocean</a></li>
 		</ul>
 	</section>
 </div>
 </div>
-</<body>
+
+<!--
+<template id="my-link">
+  <style>
+    p {
+      color: white;
+      background-color: #666;
+      padding: 5px;
+    }
+  </style>
+  <a target="_new" rel="noopener noreferrer"><slot name="link-text"></slot></a>
+</template>
+
+
+<script>
+customElements.define('my-link',
+  class extends HTMLElement {
+    constructor() {
+      super();
+      let template = document.getElementById('my-link');
+      let templateContent = template.content;
+
+      const shadowRoot = this.attachShadow({mode: 'open'})
+        .appendChild(templateContent.cloneNode(true));
+    }
+  }
+);
+</script>
+-->
+</body>
