@@ -1,5 +1,5 @@
 <html>
-<<head>
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 
@@ -13,26 +13,37 @@
 		justify-content: center;
 	}
 
-	.border-lr {
-		border-left: 1px solid gray;
+    .div-links ul {
+        list-style-type: circle;
+    }
+
+	.div-links > div:not(:last-child) {
 		border-right: 1px solid gray;
 	}
 
 </style>
-</head>>
+</head>
 
 
 <body>
 <div class="div-links">
 <div>
+    <section>
+		<h3>News</h3>
+		<ul>
+			<li><a href="https://theguardian.com/" target="_new" rel="noopener noreferrer">GUARDIAN</a></li>
+		</ul>
+	</section>
 	<section>
-		<h3>Tech News</h3>
+		<h3>Tech</h3>
 		<ul>
 			<li><a href="https://news.ycombinator.com/" target="_new" rel="noopener noreferrer">HN</a></li>
 			<li><a href="https://skimfeed.com/" target="_new" rel="noopener noreferrer">SKIMFEED</a></li>
 		</ul>
 	</section>
+</div>
 
+<div>
 	<section>
 		<h3>Quality sites</h3>
 		<ul>
@@ -41,7 +52,7 @@
 	</section>
 </div>
 
-<div class="border-lr">
+<div>
 	<section>
 		<h3>Entertainment</h3>
 		<ul>
