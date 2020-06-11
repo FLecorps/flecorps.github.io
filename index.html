@@ -1,6 +1,8 @@
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1; minimum-scale=1;" />	
+	
+	
 <style>
 
 	section {
@@ -25,6 +27,15 @@
 		border-right: 1px solid gray;
 	}
 
+	@media screen and (max-width: 600px) {
+		.div-links {
+			flex-driection: column;
+		}	
+		.div-links > div:not(:last-child) {
+			border-bottom: 1px solid gray;
+		}
+		
+	}
 </style>
 </head>
 
