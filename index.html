@@ -63,8 +63,6 @@
 
 <body>
 
-<!--my-link href="www.abacus.ch"><span slot="link-text">ABACUS</span></my-link-->
-
 <div class="div-links">
 <div>
     <section>
@@ -107,6 +105,7 @@
 		<h3>Utils</h3>
 		<ul>
 			<li><a href="https://www.cnrtl.fr/definition/" target="_new" rel="noopener noreferrer">French</a></li>
+			<li><a href="https://www.deepl.com/translator" target="_new" rel="noopener noreferrer">DeepL</a></li>
 		</ul>
 	</section>
 </div>
@@ -126,32 +125,4 @@
 </div>
 </div>
 
-<!--
-<template id="my-link">
-  <style>
-    p {
-      color: white;
-      background-color: #666;
-      padding: 5px;
-    }
-  </style>
-  <a target="_new" rel="noopener noreferrer"><slot name="link-text"></slot></a>
-</template>
-
-
-<script>
-customElements.define('my-link',
-  class extends HTMLElement {
-    constructor() {
-      super();
-      let template = document.getElementById('my-link');
-      let templateContent = template.content;
-
-      const shadowRoot = this.attachShadow({mode: 'open'})
-        .appendChild(templateContent.cloneNode(true));
-    }
-  }
-);
-</script>
--->
 </body>
