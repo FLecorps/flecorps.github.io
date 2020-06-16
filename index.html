@@ -28,14 +28,34 @@
 	}
 
 	@media screen and (max-width: 600px) {
-		.div-links {
-			flex-direction: column;
-		}	
-		.div-links > div:not(:last-child) {
-			border-right:0;
-			border-bottom: 1px solid gray;
+		h3 {
+			font-size:small;
 		}
-		
+		section {
+			font-size:smaller;
+			margin: 4px;
+		}
+		.div-links {
+			flex-wrap:wrap;
+			flex-basis:50%;
+		}	
+	 	.div-links ul {
+      			list-style-type: none;
+			list-style: none;
+      			padding: 0;
+		}
+		.div-links > div  {
+			width:50%
+		}
+		.div-links > div:nth-child(odd)  {
+			text-align: left;
+		}		
+		.div-links > div:nth-child(even)  {
+			text-align: right;
+		}		
+		.div-links >  div:not(:last-child) {
+			border-right:none;
+		}
 	}
 </style>
 </head>
