@@ -1,130 +1,152 @@
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1; minimum-scale=1;" />	
-	
-	
-<style>
-
-	section {
-		margin: 25px;
-		font-family: Verdana, Geneva, sans-serif
-	}
-
-	.div-links {
-		display: flex;
-		justify-content: center;
-	}
-
-    .div-links ul {
-        list-style-type: circle;
-    }
-
-    .div-links ul li {
-        padding:4px;
-    }
-
-	.div-links > div:not(:last-child) {
-		border-right: 1px solid gray;
-	}
-
-	@media screen and (max-width: 600px) {
-		h3 {
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1; minimum-scale=1;"/>
+		<style>
+			section {
+			margin: 25px;
+			font-family: Verdana, Geneva, sans-serif
+			}
+			.div-links {
+			display: flex;
+			justify-content: center;
+			}
+			.div-links ul {
+			list-style-type: circle;
+			}
+			.div-links ul li {
+			padding:4px;
+			}
+			.div-links > div:not(:last-child) {
+			border-right: 1px solid gray;
+			}
+			@media screen and (max-width: 600px) {
+			h3 {
 			font-size:small;
-		}
-		section {
+			}
+			section {
 			font-size:smaller;
 			margin: 4px;
-		}
-		.div-links {
+			}
+			.div-links {
 			flex-wrap:wrap;
 			flex-basis:50%;
-		}	
-	 	.div-links ul {
-      			list-style-type: none;
+			}
+			.div-links ul {
+			list-style-type: none;
 			list-style: none;
-      			padding: 0;
-		}
-		.div-links > div  {
+			padding: 0;
+			}
+			.div-links > div  {
 			width:50%
-		}
-		.div-links > div:nth-child(odd)  {
+			}
+			.div-links > div:nth-child(odd)  {
 			text-align: left;
-		}		
-		.div-links > div:nth-child(even)  {
+			}
+			.div-links > div:nth-child(even)  {
 			text-align: right;
-		}		
-		.div-links >  div:not(:last-child) {
+			}
+			.div-links >  div:not(:last-child) {
 			border-right:none;
-		}
-	}
-</style>
-</head>
-
-
-<body>
-
-<div class="div-links">
-<div>
-    <section>
-		<h3>News</h3>
-		<ul>
-		    <li><a href="https://theguardian.com/" target="_new" rel="noopener noreferrer">Guardian</a></li>
-		    <li><a href="https://www.monde-diplomatique.fr/" target="_new" rel="noopener noreferrer">Monde Diplo</a></li>
-		    <li><a href="https://lepoint.fr/" target="_new" rel="noopener noreferrer">Le Point</a></li>
-		</ul>
-		<h3>Tech</h3>
-		<ul>
-			<li><a href="https://news.ycombinator.com/" target="_new" rel="noopener noreferrer">HN</a></li>
-			<li><a href="https://skimfeed.com/" target="_new" rel="noopener noreferrer">Skimfeed</a></li>
-		</ul>
-	</section>
-</div>
-
-<div>
-	<section>
-		<h3>Quality sites</h3>
-		<ul>
-			<li><a href="https://tetw.org/" target="_new" rel="noopener noreferrer">Great Articles</a></li>
-		        <li><a href="https://inference-review.com/" target="_new" rel="noopener noreferrer">Inference</a></li>
-		</ul>
-		<h3>Hobbies</h3>
-		<ul>
-			<li><a href="https://www.justonecookbook.com/recipes/" target="_new" rel="noopener noreferrer">Recettes (Asia)</a></li>
-			<li><a href="http://www.lesrecettesdevirginie.com/" target="_new" rel="noopener noreferrer">Recettes (Europe)</a></li>
-			<li><a href="https://woodgears.ca/" target="_new" rel="noopener noreferrer">Woodworking</a></li>
-		</ul>
-	</section>
-</div>
-
-<div>
-	<section>
-		<h3>Entertainment</h3>
-		<ul>
-			<li><a href="https://jalopnik.com/" target="_new" rel="noopener noreferrer">Jalopnik</a></li>
-			<li><a href="https://digg.com/" target="_new" rel="noopener noreferrer">Digg</a></li>
-			<li><a href="https://flixtor.to/home/" target="_new" rel="noopener noreferrer">Flixtor</a></li>
-		</ul>
-		<h3>Utils</h3>
-		<ul>
-			<li><a href="https://www.cnrtl.fr/definition/" target="_new" rel="noopener noreferrer">French</a></li>
-			<li><a href="https://www.deepl.com/translator" target="_new" rel="noopener noreferrer">DeepL</a></li>
-		</ul>
-	</section>
-</div>
-
-<div>
-	<section>
-		<h3>Media</h3>
-		<ul>
-			<li><a href="https://1lib.eu/" target="_new" rel="noopener noreferrer">Free Books</a></li>
-			<li><a href="https://www.youtube.com/watch?v=AgpWX18dby4/" target="_new" rel="noopener noreferrer">10 Hours Ocean</a></li>
-		</ul>
-		<h3>Shops</h3>
-		<ul>
-			<li><a href="https://toppreise.ch/" target="_new" rel="noopener noreferrer">Toppreise (CH)</a></li>
-		</ul>
-	</section>
-</div>
-</div>
-
-</body>
+			}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div-links">
+			<div>
+				<section>
+					<h3>News</h3>
+					<ul>
+						<li>
+							<a href="https://theguardian.com/" target="_new" rel="noopener noreferrer">Guardian</a>
+						</li>
+						<li>
+							<a href="https://www.monde-diplomatique.fr/" target="_new" rel="noopener noreferrer">Monde Diplo</a>
+						</li>
+						<li>
+							<a href="https://lepoint.fr/" target="_new" rel="noopener noreferrer">Le Point</a>
+						</li>
+					</ul>
+					<h3>Tech</h3>
+					<ul>
+						<li>
+							<a href="https://news.ycombinator.com/" target="_new" rel="noopener noreferrer">HN</a>
+						</li>
+						<li>
+							<a href="https://skimfeed.com/" target="_new" rel="noopener noreferrer">Skimfeed</a>
+						</li>
+					</ul>
+				</section>
+			</div>
+			<div>
+				<section>
+					<h3>Quality sites</h3>
+					<ul>
+						<li>
+							<a href="https://tetw.org/" target="_new" rel="noopener noreferrer">Great Articles</a>
+						</li>
+						<li>
+							<a href="https://inference-review.com/" target="_new" rel="noopener noreferrer">Inference</a>
+						</li>
+					</ul>
+					<h3>Hobbies</h3>
+					<ul>
+						<li>
+							<a href="https://www.justonecookbook.com/recipes/" target="_new" rel="noopener noreferrer">Recettes (Asia)</a>
+						</li>
+						<li>
+							<a href="http://www.lesrecettesdevirginie.com/" target="_new" rel="noopener noreferrer">Recettes (Europe)</a>
+						</li>
+						<li>
+							<a href="https://woodgears.ca/" target="_new" rel="noopener noreferrer">Woodworking</a>
+						</li>
+					</ul>
+				</section>
+			</div>
+			<div>
+				<section>
+					<h3>Entertainment</h3>
+					<ul>
+						<li>
+							<a href="https://jalopnik.com/" target="_new" rel="noopener noreferrer">Jalopnik</a>
+						</li>
+						<li>
+							<a href="https://digg.com/" target="_new" rel="noopener noreferrer">Digg</a>
+						</li>
+						<li>
+							<a href="https://flixtor.to/home/" target="_new" rel="noopener noreferrer">Flixtor</a>
+						</li>
+					</ul>
+					<h3>Utils</h3>
+					<ul>
+						<li>
+							<a href="https://www.cnrtl.fr/definition/" target="_new" rel="noopener noreferrer">French</a>
+						</li>
+						<li>
+							<a href="https://www.deepl.com/translator" target="_new" rel="noopener noreferrer">DeepL</a>
+						</li>
+					</ul>
+				</section>
+			</div>
+			<div>
+				<section>
+					<h3>Media</h3>
+					<ul>
+						<li>
+							<a href="https://1lib.eu/" target="_new" rel="noopener noreferrer">Free Books</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/watch?v=AgpWX18dby4/" target="_new" rel="noopener noreferrer">10 Hours Ocean</a>
+						</li>
+					</ul>
+					<h3>Shops</h3>
+					<ul>
+						<li>
+							<a href="https://toppreise.ch/" target="_new" rel="noopener noreferrer">Toppreise (CH)</a>
+						</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+	</body>
+	
