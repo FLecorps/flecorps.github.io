@@ -35,12 +35,12 @@
 
       section {
         font-size: smaller;
-        margin: 4px;
+        flex: 40%;
       }
 
+    
       .div-links {
-        flex-wrap: wrap;
-        flex-basis: 50%;
+        width: 100%;
       }
 
       .div-links ul {
@@ -49,18 +49,14 @@
         padding: 0;
       }
 
-      .div-links>.section {
-        width: 50%
-      }
 
-      .div-links>.section:nth-child(odd) {
+      .div-links>section:nth-child(odd) {
         text-align: left;
       }
 
-      .div-links>.section:nth-child(even) {
+      .div-links>section:nth-child(even) {
         text-align: right;
       }
-
     }
   </style>
 </head>
