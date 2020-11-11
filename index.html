@@ -7,8 +7,8 @@
   <style>
     body {
       margin 0;
-    }  
-    
+    }
+
     section {
       flex-basis: 178px;
       /*border: 1px solid red;*/
@@ -35,7 +35,11 @@
 
 
     @media screen and (max-width: 600px) {
-      
+
+      h3 {
+          text-transform: capitalize;
+      }
+
       h3:before, h3:after {
         content: " -- ";
       }
@@ -48,13 +52,13 @@
         flex: 100%;
         text-align: center;
       }
-      
+
       a {
         color: lime;
         text-decoration: none;
       }
 
-    
+
       .div-links {
         width: 100%;
       }
@@ -63,6 +67,10 @@
         list-style-type: none;
         list-style: none;
         padding: 0;
+      }
+
+      .no-phones {
+          display: none;
       }
 
     }
@@ -155,7 +163,7 @@
         <li>
           <a href="https://www.deepl.com/translator" target="_new" rel="noopener noreferrer">DeepL</a>
         </li>
-        <li>
+        <li class="no-phones">
           <a href="data:text/html,<html contenteditable>" target="_new" rel="noopener noreferrer">Editor</a>
         </li>
       </ul>
