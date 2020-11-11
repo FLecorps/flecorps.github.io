@@ -39,7 +39,7 @@
     }
 
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 600px), (orientation: landscape) {
 
     * {
         background-color: black;
@@ -85,6 +85,12 @@
           display: none;
       }
 
+    }
+
+    @media screen and (orientation: landscape) {
+        section {
+            flex: 50%;
+        }
     }
   </style>
 </head>
