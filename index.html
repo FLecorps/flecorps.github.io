@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1; minimum-scale=1;" />
   <title>FL Links</title>
   <style>
+
+      @font-face {
+          font-family: casio;
+          src: url(casio_fx-7800gc.ttf);
+      }
+
     body {
       margin 0;
     }
@@ -37,11 +43,12 @@
     @media screen and (max-width: 600px) {
 
       h3 {
-          text-transform: capitalize;
+          font-family: casio;
+          text-transform: uppercase;
       }
 
       h3:before, h3:after {
-        content: " -- ";
+        content: "  ";
       }
 
       section {
