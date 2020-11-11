@@ -22,7 +22,7 @@
     }
 
     .div-links {
-      width: 800px;
+      max-width: 800px;
       margin: 0 auto;
 
       display: flex;
@@ -46,7 +46,7 @@
         display: none;
     }
 
-    @media screen and (max-width: 600px), (orientation: landscape) {
+    @media only screen and (max-device-width: 900px) {
 
     * {
         background-color: black;
@@ -89,11 +89,11 @@
       }
 
       .only-phones {
-          display: true;
+          display: block;
       }
     }
 
-    @media screen and (orientation: landscape) {
+    @media only screen and (max-device-width: 900px) and (orientation: landscape) {
         section {
             flex: 50%;
         }
