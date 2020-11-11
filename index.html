@@ -38,6 +38,13 @@
       padding: 4px;
     }
 
+    .no-phones {
+        display: none;
+    }
+
+    .only-phones {
+        display: none;
+    }
 
     @media screen and (max-width: 600px), (orientation: landscape) {
 
@@ -81,10 +88,9 @@
         padding: 0;
       }
 
-      .no-phones {
-          display: none;
+      .only-phones {
+          display: true;
       }
-
     }
 
     @media screen and (orientation: landscape) {
@@ -103,8 +109,11 @@
         <li>
           <a href="https://theguardian.com/" target="_new" rel="noopener noreferrer">Guardian</a>
         </li>
-        <li>
+        <li class="no-phones">
           <a href="https://www.teletext.ch/RTSUn/100" target="_new" rel="noopener noreferrer">Teletext</a>
+        </li>
+        <li class="only-phones">
+          <a href="https://m.teletext.ch/RTSUn/100" target="_new" rel="noopener noreferrer">Teletext</a>
         </li>
         <li>
           <a href="https://www.monde-diplomatique.fr/" target="_new" rel="noopener noreferrer">Monde Diplo</a>
