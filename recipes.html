@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Recipes</title>
+    <script>
+    function search(input) {
+        let filter = input.value.toUpperCase();
+        let li = document.getElementsByTagName('a');
+        let a="";
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++) {
+            // a = li[i].getElementsByTagName("a")[0];
+            a = li[i];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                a.parentNode.style.display = "";
+            } else {
+                a.parentNode.style.display = "none";
+            }
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <input oninput="search(this)"/>
+     <dl>
+        <dt>
+            <h3 folded="">Curries</h3>
+            <dl>
+                <p>
+                </p><dt><a target="_blank" href="https://www.theguardian.com/food/2021/jan/25/20-best-curry-recipes-shuko-oda-dashi-keema-curry-onsen-tamago-egg">Shuko Oda&#39;s dashi keema curry with onsen tamago egg | Food | The Guardian</a>
+                </dt><dt><a target="_blank" href="https://www.theguardian.com/food/2021/jan/25/20-best-curry-recipes-selina-periampillai-seychellois-cari-koko-king-prawns">Seychellois cari koko – king prawns with tamarind and coconut by Selina Periampillai | Food | The Guardian</a>
+                </dt><dt><a target="_blank" href="https://www.theguardian.com/food/2021/jan/25/20-best-curry-recipes-amy-and-emily-chung-pumpkin-curry">Amy and Emily Chung&#39;s shwe payon thee hin – pumpkin curry | Food | The Guardian</a>
+                </dt><dt><a target="_blank" href="https://www.theguardian.com/food/2021/jan/25/20-best-curry-recipes-kay-plunkett-hogge-gaeng-massaman-massaman-curry">Kay Plunkett-Hogge&#39;s gaeng massaman – massaman curry | Food | The Guardian</a>
+                </dt><dt><a target="_blank" href="https://www.theguardian.com/food/2021/jan/25/20-best-curry-recipes-andi-oliver-curried-coconut-chickpeas">Andi Oliver&#39;s curried coconut chickpeas and maple roast spiced winter ground provision | Food | The Guardian</a>
+                </dt><dt><a target="_blank" href="https://bellevue.nzz.ch/kochen-geniessen/rezept-schnelles-seafood-curry-ld.1550190">Schnelles Seafood-Curry – Rezept</a>
+                </dt><dt><a target="_blank" href="https://oursaltykitchen.com/keema-curry/">Ground Beef Keema Curry (Gluten Free, Dairy Free) | Our Salty Kitchen</a>
+                </dt><dt><a target="_blank" href="https://www.jamieoliver.com/recipes/beetroot-recipes/beetroot-curry/">Beetroot curry</a>
+                </dt><dt><a target="_blank" href="https://asmallbite.com/bitter-gourd-curry-recipe-pavakkai-masala-recipe/">Bitter Gourd Curry Recipe | Pavakkai Masala Recipe - ASmallBite</a>
+                </dt><dt><a target="_blank" href="https://www.foodfreak.de/2016/11/das-wohl-endgueltige-aloo-gobi/">Das wohl endgültige Aloo Gobi – Foodfreak</a>
+                </dt><dt><a target="_blank" href="https://thehappyfoodie.co.uk/recipes/meera-sodhas-spinach-tomato-and-chickpea-curry/">Meera Sodha Spinach, Tomato &amp; Chickpea Curry | Vegetarian Indian Recipe</a>
+                </dt><dt><a target="_blank" href="https://www.recipetineats.com/goan-fish-curry-indian/">Goan Fish Curry (Indian) | RecipeTin Eats</a>
+                </dt>
+            </dl>
+            <p>
+            </p>
+        </dt><dt>
+            <h3 folded="">Kuchen &amp; Co.</h3>
+            <dl>
+                <p>
+                </p><dt><a target="_blank" href="https://zoebakes.com/2018/08/18/chocolate-zucchini-cake/">Best Ever Chocolate Zucchini Cake | ZoëBakes | eat dessert first</a>
+                </dt><dt><a target="_blank" href="https://www.davidlebovitz.com/zucchini-cake-with-crunchy-lemon/">Zucchini Cake with Crunchy Lemon Glaze - David Lebovitz</a>
+                </dt><dt><a target="_blank" href="https://www.simplyrecipes.com/recipes/oatmeal_raisin_cookies/">Oatmeal Raisin Cookies {Best Recipe Ever!} | SimplyRecipes.com</a>
+                </dt><dt><a target="_blank" href="http://flavouredwithlove.com/2019/04/24/rhabarber-joghurt-kuchen/">Rhabarber-Joghurt-Kuchen – Flavoured with Love</a>
+                </dt><dt><a target="_blank" href="https://www.tasteoftravel.at/original-wiener-apfelstrudel/">Original Wiener Apfelstrudel » Taste of Travel</a>
+                </dt>
+            </dl>
+            <p>
+            </p>
+        </dt><dt>
+            <h3 folded="">Süsskartoffel</h3>
+            <dl>
+                <p>
+                </p><dt><a target="_blank" href="https://peasandcrayons.com/2019/01/spicy-moroccan-sweet-potato-soup.html">Spicy Moroccan Sweet Potato Soup - Instant Pot + Stove Top</a>
+                </dt><dt><a target="_blank" href="https://cookieandkate.com/baked-sweet-potato-fries/">Crispy Baked Sweet Potato Fries - Cookie and Kate</a>
+                </dt><dt><a target="_blank" href="https://www.hellofresh.co.uk/recipes/coconutty-caribbean-soup-5995ae14ad1d6c0c8d41a7e2">Coconut Soup with Sweet Potato Recipe | HelloFresh</a>
+                </dt><dt><a target="_blank" href="https://www.delish.com/uk/cooking/recipes/a29841144/butternut-squash-sweet-potato-soup/">Butternut Squash And Sweet Potato Soup - Easy Soup Recipes</a>
+                </dt><dt><a target="_blank" href="https://www.whoneedssalad.com/sweet-potato-soup/">Roasted Sweet Potato Soup - Who Needs Salad?</a>
+                </dt><dt><a target="_blank" href="https://biancazapatka.com/de/suesskartoffel-quesadillas-vegan/">Süßkartoffel-Quesadillas (vegan) - Bianca Zapatka | Rezepte</a>
+                </dt>
+            </dl>
+            <p>
+            </p>
+        </dt><dt>
+            <h3 folded="">Broccoli &amp; Blumenkohl</h3>
+            <dl>
+                <p>
+                </p><dt><a target="_blank" href="https://www.wildeisen.ch/rezepte/couscous-salat-mit-blumenkohl-05-19">Couscous-Salat mit Blumenkohl - Annemarie Wildeisens KOCHEN</a>
+                </dt><dt><a target="_blank" href="https://www.bonappetit.com/recipe/big-flavor-broccoli">Broccoli With Onion and Parmesan Recipe | Bon Appétit</a>
+                </dt><dt><a target="_blank" href="https://www.bonappetit.com/recipe/yellow-chicken-adobo">Yellow Chicken Adobo Recipe | Bon Appétit</a>
+                </dt><dt><a target="_blank" href="https://www.bonappetit.com/recipe/vadouvan-roasted-cauliflower-harissa-chickpea-curry">Vadouvan-Roasted Cauliflower with Harissa Chickpea Curry Recipe | Bon Appétit</a>
+                </dt><dt><a target="_blank" href="https://www.bonappetit.com/recipe/shrimp-curry-with-chickpeas-and-cauliflower">Shrimp Curry with Chickpeas and Cauliflower Recipe | Bon Appétit</a>
+                </dt><dt><a target="_blank" href="https://www.bonappetit.com/recipe/shingaras-with-cauliflower-and-potato-filling">Shingaras with Cauliflower and Potato Filling Recipe | Bon Appétit</a>
+                </dt><dt><a target="_blank" href="https://www.bonappetit.com/recipe/kung-pao-cauliflower">Kung Pao Cauliflower Recipe | Bon Appétit</a>
+                </dt>
+            </dl>
+            <p>
+            </p>
+        </dt><dt>
+            <h3 folded="">Pumpkin &amp; Squash</h3>
+            <dl>
+                <p>
+                </p><dt><a target="_blank" href="https://cupfulofkale.com/vegan-roasted-butternut-squash-and-chickpea-curry/">Roasted Butternut Squash and Chickpea Curry - Cupful of Kale</a>
+                </dt><dt><a target="_blank" href="https://www.rivercottage.net/recipes/pork-and-pumpkin-curry">Pork and pumpkin curry | River Cottage</a>
+                </dt><dt><a target="_blank" href="http://www.earthyfeast.com/recipe/pumpkin-pot-pie/">Pumpkin Pot Pie - Earthy Feast</a>
+                </dt><dt><a target="_blank" href="https://joythebaker.com/2018/11/vegetarian-pumpkin-pot-pie/">Vegetarian Pumpkin Pot Pie - Joy the Baker</a>
+                </dt><dt><a target="_blank" href="https://munchmunchyum.com/butternut-squash-noodles-recipes-spirals/">13 Spiralized Butternut Squash Noodle Recipes</a>
+                </dt><dt><a target="_blank" href="https://www.abeautifulplate.com/butternut-squash-pie/">Butternut Squash Pie with Shallots, Radicchio, and Feta - A Beautiful Plate</a>
+                </dt><dt><a target="_blank" href="https://www.delish.com/uk/cooking/recipes/a29841144/butternut-squash-sweet-potato-soup/">Butternut Squash And Sweet Potato Soup - Easy Soup Recipes</a>
+                </dt><dt><a target="_blank" href="https://joythebaker.com/2020/11/pumpkin-pasta-dinner-with-sausage-and-goat-cheese/">Pumpkin Pasta Dinner with Sausage and Goat Cheese - Joy the Baker</a>
+                </dt><dt><a target="_blank" href="https://www.bbcgoodfood.com/recipes/soft-polenta-roast-squash-kale-hazelnuts">Soft polenta with roast squash, kale &amp; hazelnuts recipe - BBC Good Food</a>
+                </dt><dt><a target="_blank" href="https://www.theguardian.com/food/2021/jan/25/20-best-curry-recipes-amy-and-emily-chung-pumpkin-curry">Amy and Emily Chung&#39;s shwe payon thee hin – pumpkin curry | Food | The Guardian</a>
+                </dt><dt><a target="_blank" href="https://www.theguardian.com/food/2021/jan/25/20-best-curry-recipes-andi-oliver-curried-coconut-chickpeas">Andi Oliver&#39;s curried coconut chickpeas and maple roast spiced winter ground provision | Food | The Guardian</a>
+                </dt>
+            </dl>
+            <p>
+            </p>
+        </dt><dt><a target="_blank" href="https://wildkitchen.ch/10-fermentierte-lebensmittel/">Die 10 besten fermentierten Lebensmittel zum selbermachen - WILD KITCHEN</a>
+        </dt><dt><a target="_blank" href="https://www.jamieoliver.com/recipes/pasta-recipes/world-s-most-elegant-winter-pasta/">World’s most elegant winter pasta | Pasta recipes | Jamie Oliver</a>
+        </dt><dt><a target="_blank" href="https://www.tasteoftravel.at/knusprige-bratkartoffeln/">Knusprige Bratkartoffeln » Taste of Travel</a>
+        </dt><dt><a target="_blank" href="https://www.cooked.com/Andreas-Pohl/Hardie-Grant-Books/Real-Vietnamese-Cooking/Vegetables-and-salads/Water-spinach-salad-recipe">Water spinach salad recipe from Real Vietnamese Cooking by Andreas Pohl | Cooked</a>
+        </dt><dt><a target="_blank" href="https://www.funfoodfrolic.com/urad-dal-recipe/">Urad Dal Recipe | Shahi Urad Dal - Fun FOOD Frolic</a>
+        </dt><dt><a target="_blank" href="https://gaumenpoesie.com/fried-morning-glory-indonesischer-wasserspinat/">Fried Morning Glory - Indonesischer Wasserspinat - Gaumenpoesie</a>
+        </dt><dt><a target="_blank" href="https://www.kuriositaetenladen.com/2019/08/geschmorte-haehnchenschenkel-auf-Paprikakraut.html">Geschmorte Hähnchenschenkel auf Paprikakraut und kleinen Kartoffeln</a>
+        </dt><dt><a target="_blank" href="https://www.justonecookbook.com/okonomiyaki/">Okonomiyaki Recipe お好み焼き • Just One Cookbook</a>
+        </dt><dt><a target="_blank" href="https://1mal1japan.de/japanische-kueche/okonomiyaki/">Okonomiyaki selber machen ▷ Schnitt für Schritt mit 1mal1japan.de</a>
+        </dt><dt><a target="_blank" href="https://www.loveandlemons.com/watermelon-gazpacho/">Watermelon Gazpacho Recipe - Love and Lemons</a>
+        </dt><dt><a target="_blank" href="https://www.halfbakedharvest.com/cuban-chicken-black-bean-quinoa-bowls-fried-bananas/">Cuban Chicken and Black Bean Quinoa Bowls | HBH</a>
+        </dt><dt><a target="_blank" href="https://mamasnowcooks.com/2017/08/01/vietnamese-water-spinach-salad-with-shrimp-and-pork/">Vietnamese Water Spinach Salad with Shrimp and Pork – Goi Rau Muong Tom Thit – Mama Snow Cooks and More</a>
+        </dt><dt><a target="_blank" href="https://www.thedailymeal.com/recipes/water-spinach-salad-recipe">Water Spinach Salad Recipe by Daisy Nichols</a>
+        </dt><dt><a target="_blank" href="https://steemit.com/food/@anbpt/water-spinach-salad-recipe">Water spinach salad recipe. — Steemit</a>
+        </dt><dt><a target="_blank" href="https://itdoesnttastelikechicken.com/mixed-vegetables-fajitas/">Mixed Vegetable Fajitas - it doesn&#39;t taste like chicken</a>
+        </dt><dt><a target="_blank" href="https://www.thelastfoodblog.com/vegetable-fajitas/">Vegetable Fajitas - The Last Food Blog</a>
+        </dt><dt><a target="_blank" href="https://cookieandkate.com/crispy-falafel-recipe/">Crispy Falafel Recipe (Baked Not Fried) - Cookie and Kate</a>
+        </dt><dt><a target="_blank" href="https://cookieandkate.com/epic-baba-ganoush-recipe/">Epic Baba Ganoush Recipe - Cookie and Kate</a>
+        </dt><dt><a target="_blank" href="https://cookieandkate.com/best-hummus-recipe/">Best Hummus Recipe (Plus Tips &amp; Variations) - Cookie and Kate</a>
+        </dt><dt><a target="_blank" href="https://kochzivilisten.de/2012/09/07/tabbouleh/">Jetzt haben wir den Salat: Taboulé a la Uli (Tomate 3 von 3) | Kochzivilisten</a>
+        </dt><dt><a target="_blank" href="https://www.bbcgoodfood.com/recipes/beetroot-squash-wellingtons-kale-pesto">Vegan beetroot Wellingtons recipe - BBC Good Food</a>
+        </dt><dt><a target="_blank" href="https://www.bbcgoodfood.com/recipes/kale-chorizo-broth">Kale &amp; chorizo broth recipe - BBC Good Food</a>
+        </dt><dt><a target="_blank" href="https://www.gruenesmoothies.org/nice-cream-selber-machen/">Nice Cream selber machen: Tipps für bestes Eis - Grüne Smoothies</a>
+        </dt><dt><a target="_blank" href="https://www.kitchenaid.de/recipes/joghurt-und-honigeis-mit-geroesteten-mandeln/vip">Joghurt- und Honigeis mit gerösteten Mandeln | Rezepte | Offizielle Website von KitchenAid</a>
+        </dt><dt><a target="_blank" href="https://volkerkocht.blogspot.com/2018/06/tintenfisch-in-tomatensauce.html">Tintenfisch in Tomatensauce</a>
+        </dt><dt><a target="_blank" href="https://www.wildeisen.ch/rezepte/mini-blaetterteigtaschen-mit-palmkohl">Mini-Blätterteigtaschen mit Palmkohl - Annemarie Wildeisens KOCHEN</a>
+        </dt><dt><a target="_blank" href="https://www.gaultmillau.ch/rezepte/bundner-gerstensuppe-231959">Rezept: Bündner Gerstensuppe, Andreas Caminada</a>
+        </dt><dt><a target="_blank" href="https://dieseekocht.com/2018/03/07/spaghetti-bottarga-rezept-sardischer-kaviar/">Bottarga Spaghetti – Rezept mit sardischem Kaviar „Parmesan des Meeres“ – DIE SEE KOCHT</a>
+        </dt><dt><a target="_blank" href="https://mehlundfutter.ch/maisbrot/">Rezept für feines Maisbrot | mehlundfutter.ch</a>
+        </dt><dt><a target="_blank" href="https://deeskueche.de/2020/01/19/toskanische-ribollita-originalrezept/">Toskanische Bohnensuppe Ribollita | Dee&#39;s Küche | Foodblog</a>
+        </dt><dt><a target="_blank" href="https://www.wildeisen.ch/rezepte/coquelets-auf-sauerkraut">Coquelets auf Sauerkraut - Annemarie Wildeisens KOCHEN</a>
+        </dt><dt><a target="_blank" href="https://www.wildeisen.ch/rezepte/sauerkraut-kartoffel-gratin">Sauerkraut-Kartoffel-Gratin - Annemarie Wildeisens KOCHEN</a>
+        </dt><dt><a target="_blank" href="https://www.bonappetit.com/recipe/big-flavor-broccoli">Broccoli With Onion and Parmesan Recipe | Bon Appétit</a>
+        </dt><dt><a target="_blank" href="https://www.justonecookbook.com/teriyaki-tofu/">Teriyaki Tofu 照り焼き豆腐 • Just One Cookbook</a>
+        </dt><dt><a target="_blank" href="https://cookieandkate.com/kung-pao-brussels-sprouts-recipe/">Kung Pao Brussels Sprouts - Cookie and Kate</a>
+        </dt><dt><a target="_blank" href="https://thewoksoflife.com/honey-sriracha-roasted-brussels-sprouts/">Honey Sriracha Roasted Brussels Sprouts | The Woks of Life</a>
+        </dt><dt><a target="_blank" href="https://www.andronaco-shop.de/magazin/la-cucina-italiana/lecker-sattmacher-polenta-kochen-und-geniessen/">Polenta kochen: Den leckeren Maisbrei zubereiten | Andronaco</a>
+        </dt><dt><a target="_blank" href="https://www.gaultmillau.ch/stichworte/d/das-shutdown-rezept?gclid=EAIaIQobChMIhLb866GX8AIVh-R3Ch3QLgHuEAMYAiAAEgJQpvD_BwE">Alle Artikel zum Thema Das Shutdown-Rezept</a>
+        </dt><dt><a target="_blank" href="https://www.simplyrecipes.com/recipes/korean_spicy_cold_noodles/">Korean Spicy Cold Noodles (Bibim Guksu)</a>
+        </dt><dt><a target="_blank" href="https://www.koreanbapsang.com/bibim-guksu-korean-spicy-cold-noodles/">Bibim Guksu (Spicy Cold Noodles) - Korean Bapsang</a>
+        </dt><dt><a target="_blank" href="https://seonkyounglongest.com/bibimmyeon/">Bibimmyeon EASY Korean Noodles Recipe &amp; Video - Seonkyoung Longest</a>
+        </dt><dt><a target="_blank" href="https://www.wildeisen.ch/rezepte/couscous-salat-mit-blumenkohl-05-19">Couscous-Salat mit Blumenkohl - Annemarie Wildeisens KOCHEN</a>
+        </dt><dt><a target="_blank" href="https://www.beyondkimchee.com/spinach-pancakes/">Crispy Spinach Pancakes | Beyond Kimchee</a>
+        </dt><dt><a target="_blank" href="https://www.wildeisen.ch/rezepte/pilz-polenta-mit-cherrytomaten-09-18">Pilz-Polenta mit Cherrytomaten - Annemarie Wildeisens KOCHEN</a>
+        </dt><dt><a target="_blank" href="https://www.eat-this.org/vegane-poke-bowl/">Vegane Poke Bowl · Eat this! Foodblog • Vegane Rezepte • Stories</a>
+        </dt><dt><a target="_blank" href="https://www.justonecookbook.com/mapo-eggplant/">Mapo Eggplant (Mabo Nasu) 麻婆茄子 • Just One Cookbook</a>
+        </dt><dt><a target="_blank" href="https://perfecthealthdiet.de/rezepte/zucchini-bowl-mit-kokosoel-koriander-pesto/">Zucchini-Bowl mit Kokosöl-Koriander-Pesto - perfecthealthdiet.de</a>
+        </dt><dt><a target="_blank" href="https://www.womensweeklyfood.com.au/recipes/zucchini-and-tofu-noodles-with-coriander-pesto-29486">Zucchini and tofu noodles with coriander pesto | Australian Women&#39;s Weekly Food</a>
+        </dt><dt><a target="_blank" href="https://thewoksoflife.com/suan-la-fen-hot-sour-sweet-potato-glass-noodle-soup/">Suan La Fen (Chongqing Hot &amp; Sour Noodle Soup) | The Woks of Life</a>
+        </dt><dt><a target="_blank" href="https://www.kuechengoetter.de/rezepte/schwarze-bohnen-in-mexikanischer-mole-sauce-46342">Schwarze Bohnen in mexikanischer Mole-Sauce Rezept | Küchengötter</a>
+        </dt><dt><a target="_blank" href="https://nerdswithknives.com/gingery-chicken-rice-noodle-soup-garlic/">Gingery Chicken and Rice Noodle Soup with Crispy Garlic</a>
+        </dt><dt><a target="_blank" href="https://www.kuriositaetenladen.com/2012/08/linsenschaumsuppchen.html">Linsenschaumsüppchen</a>
+        </dt><dt><a target="_blank" href="https://www.homebaking.at/">HOMEBAKING BLOG – Dietmar Kappl – Produktionsleiter bei Reichl Brot und einer der besten Bäcker Österreichs – gibt seine Erfahrungen weiter und präsentiert traditionelle und ausgefallene Brotrezepte zum Nachbacken.</a>
+        </dt><dt><a target="_blank" href="https://chili-und-ciabatta.de/2014/11/sichuan-nudelsuppe-mit-schweineschulter-und-gemuese/">Sichuan-Nudelsuppe mit Schweineschulter und Gemüse – Chili und Ciabatta</a>
+        </dt><dt><a target="_blank" href="https://chili-und-ciabatta.de/2014/11/sichuan-nudelsuppe-mit-schweineschulter-und-gemuese/">Sichuan-Nudelsuppe mit Schweineschulter und Gemüse – Chili und Ciabatta</a>
+        </dt><dt><a target="_blank" href="https://www.cookwithmanali.com/restaurant-style-vegetable-biryani/">Restaurant style Vegetable Biryani - Cook With Manali</a>
+        </dt><dt><a target="_blank" href="https://honestcooking.com/miso-turnips-black-sesame-soba-noodles/">Miso Turnips and Black Sesame Soba Noodles</a>
+        </dt><dt><a target="_blank" href="https://cinnamonandcoriander.com/en/kuerbis-hummus-mit-lamm-und-petersiliensauce/">Roasted Kabocha Squash Hummus with Spiced Lamb &amp; Parsley Sauce</a>
+        </dt><dt><a target="_blank" href="https://www.onceuponachef.com/recipes/french-apple-cake.html">French Apple Cake - Once Upon a Chef</a>
+        </dt><dt><a target="_blank" href="https://www.shelikesfood.com/sweet-potato-black-bean-vegetarian-meatball-enchilada-bake/">Sweet Potato &amp; Black Bean Vegetarian Meatball Enchilada Bake - She Likes Food</a>
+        </dt><dt><a target="_blank" href="https://www.tasteofhome.com/recipes/smoky-sweet-potato-and-black-bean-enchiladas/">Smoky Sweet Potato and Black Bean Enchiladas Recipe | Taste of Home</a>
+        </dt><dt><a target="_blank" href="https://www.homebaking.at/">HOMEBAKING BLOG – Dietmar Kappl – Produktionsleiter bei Reichl Brot und einer der besten Bäcker Österreichs – gibt seine Erfahrungen weiter und präsentiert traditionelle und ausgefallene Brotrezepte zum Nachbacken.</a>
+        </dt>
+    </dl>
+</body>
+
+</html>
