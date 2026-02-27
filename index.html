@@ -1,350 +1,564 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1; minimum-scale=1;" />
-  <title>FL Links</title>
-  <style>
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0; maximum-scale=1; minimum-scale=1;"
+        />
+        <title>FL Links</title>
+        <base target="_new" />
+        <style>
 
-    /*
-      @font-face {
-          font-family: BPdots;
-          src: url(BPdots.otf);
-      }
-    */
+            /*
+              @font-face {
+                  font-family: BPdots;
+                  src: url(BPdots.otf);
+              }
+            */
 
-    body {
-      margin 0;
-    }
+            body {
+              margin 0;
+            }
 
-    section {
-      flex-basis: 178px;
-      padding:10px;
-      font-family: sans-serif
-    }
+            section {
+              flex-basis: 178px;
+              padding:10px;
+              font-family: sans-serif
+            }
 
-    .div-links {
-      max-width: 800px;
-      margin: 0 auto;
+            .div-links {
+              max-width: 800px;
+              margin: 0 auto;
 
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+            }
 
-    .div-links ul {
-      list-style-type: circle;
-    }
+            .div-links ul {
+              list-style-type: circle;
+            }
 
-    .div-links ul li {
-      padding: 4px;
-    }
+            .div-links ul li {
+              padding: 4px;
+            }
 
-    .no-phones {
-        display: list-item;
-    }
+            .no-phones {
+                display: list-item;
+            }
 
-    .only-phones {
-        display: none;
-    }
+            .only-phones {
+                display: none;
+            }
 
-    @media only screen and (max-device-width: 900px) {
+            @media only screen and (max-device-width: 900px) {
 
-    * {
-        background-color: black;
-        font-family: sans-serif;
-        color: lime;
-        text-transform: uppercase;
-      }
+            * {
+                background-color: black;
+                font-family: sans-serif;
+                color: lime;
+                text-transform: uppercase;
+              }
 
-      h3 {
-          font-size: 18px ;
-      }
+              h3 {
+                  font-size: 18px ;
+              }
 
-      h3:before, h3:after {
-          content: " - "
-      }
+              h3:before, h3:after {
+                  content: " - "
+              }
 
-      section {
-        /*transform: scale(1.25, 1);*/
-        padding: 0;
-        flex: 100%;
-        text-align: center;
-      }
+              section {
+                /*transform: scale(1.25, 1);*/
+                padding: 0;
+                flex: 100%;
+                text-align: center;
+              }
 
-      a {
-       font-size: 14px;
-       font-weight: bold;
-       text-decoration: none;
+              a {
+               font-size: 14px;
+               font-weight: bold;
+               text-decoration: none;
 
-      }
+              }
 
-      .div-links {
-        overflow: hidden;
-        width: 100%;
-      }
+              .div-links {
+                overflow: hidden;
+                width: 100%;
+              }
 
-      .div-links ul {
-        list-style-type: none;
-        list-style: none;
-        padding: 0;
-      }
+              .div-links ul {
+                list-style-type: none;
+                list-style: none;
+                padding: 0;
+              }
 
-      .no-phones {
-          display: none;
-      }
+              .no-phones {
+                  display: none;
+              }
 
-      .only-phones {
-          display: block;
-      }
-    }
+              .only-phones {
+                  display: block;
+              }
+            }
 
-    @media only screen and (max-device-width: 900px) and (orientation: landscape) {
-        section {
-            flex: 50%;
-        }
-    }
-  </style>
-</head>
+            @media only screen and (max-device-width: 900px) and (orientation: landscape) {
+                section {
+                    flex: 50%;
+                }
+            }
+        </style>
+    </head>
 
-<body>
-  <div class="div-links">
-    <section>
-      <h3>News</h3>
-      <ul>
-        <li>
-          <a href="https://swissinfo.ch/" target="_new" rel="noopener noreferrer">Swiss Info</a>
-        </li>
-        <li>
-          <a href="https://theguardian.com/" target="_new" rel="noopener noreferrer">Guardian</a>
-        </li>
-        <li class="no-phones">
-          <a href="https://www.teletext.ch/RTSUn/100" target="_new" rel="noopener noreferrer">Teletext</a>
-        </li>
-        <li class="only-phones">
-          <a href="http://wwwm.teletext.ch/RTSUn/100" target="_new" rel="noopener noreferrer">Teletext</a>
-        </li>
-        <li>
-          <a href="https://lepoint.fr/" target="_new" rel="noopener noreferrer">Le Point</a>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h3>Tech</h3>
-      <ul>
-        <li>
-          <a href="https://news.ycombinator.com/" target="_new" rel="noopener noreferrer">HN</a>
-        </li>
-        <li>
-          <a href="https://skimfeed.com/" target="_new" rel="noopener noreferrer">Skimfeed</a>
-        </li>
-        <li>
-          <a href="https://solar.lowtechmagazine.com" target="_new" rel="noopener noreferrer">Low Tech</a>
-        </li>
-        <li>
-          <a href="https://mechanical-library.org/" target="_new" rel="noopener noreferrer">Mech Lib</a>
-        </li>
-        <li>
-          <a href="https://lineageos.org/" target="_new" rel="noopener noreferrer">LineageOS</a>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h3>Science</h3>
-      <ul>
-        <li>
-          <a href="https://ciechanow.ski/" target="_new" rel="noopener noreferrer">Physics for all</a>
-        </li>
-        <li>
-          <a href="https://matthias-research.github.io/pages/tenMinutePhysics/index.html" target="_new" rel="noopener noreferrer">10' Physics</a>
-        </li>
-        <li>
-          <a href="https://www.3blue1brown.com/" target="_new" rel="noopener noreferrer">Maths & Phys</a>
-        </li>
-        <li>
-          <a href="https://jp-petit.org/" target="_new" rel="noopener noreferrer">JP Petit</a>
-        </li>
-        <li>
-          <a href="https://www.feynmanlectures.caltech.edu/" target="_new" rel="noopener noreferrer">Feynman lectures</a>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h3>Long Read</h3>
-      <ul>
-        <li>
-          <a href="https://tetw.org/" target="_new" rel="noopener noreferrer">Great Articles</a>
-        </li>
-         <li>
-          <a href="https://pluralistic.net/" target="_new" rel="noopener noreferrer">Pluralistic</a>
-        </li>
-        <li>
-          <a href="https://www.monde-diplomatique.fr/" target="_new" rel="noopener noreferrer">Monde Diplo</a>
-        </li>
-        <li>
-          <a href="https://thewalrus.ca/" target="_new" rel="noopener noreferrer">The Walrus</a>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h3>Media</h3>
-      <ul>
-          <li>
-            <a href="https://flixtor.to/home/" target="_new" rel="noopener noreferrer">Flixtor</a>
-          </li>
-        <li>
-          <a href="https://wikitok.net/" target="_new" rel="noopener noreferrer">WikiTok</a>
-        </li>
-        <li>
-          <a href="https://www.rtl.fr/programmes/l-oeil-de" target="_new" rel="noopener noreferrer">Caveriviere</a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/@alexistramoni" target="_new" rel="noopener noreferrer">Tramoni</a>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h3>Books</h3>
-      <ul>
-        <li>
-          <a href="https://z-lib.is/" target="_new" rel="noopener noreferrer">Free Books</a>
-        </li>
-        <li>
-          <a href="https://catalogue.bnf.fr/index.do" target="_new" rel="noopener noreferrer">BNF</a>
-        </li>
-        <li>
-          <a href="https://www.bookseriesinorder.com/" target="_new" rel="noopener noreferrer">Books in order</a>
-        </li>
-    </ul>
-    </section>
-    <section>
-      <h3>Bouffe</h3>
-      <ul>
-        <li>
-          <a href="https://www.ricardocuisine.com/" target="_new" rel="noopener noreferrer">West</a>
-        </li>
-        <li>
-          <a href="https://www.lesrecettesdevirginie.com/" target="_new" rel="noopener noreferrer">Europe</a>
-        </li>
-        <li>
-          <a href="https://www.justonecookbook.com/recipes/" target="_new" rel="noopener noreferrer">Japan/Corea</a>
-        </li>
-        <li>
-          <a href="http://misstamkitchenette.com/" target="_new" rel="noopener noreferrer">Vietnam</a>
-        </li>
-        <li>
-          <a href="https://thewoksoflife.com/" target="_new" rel="noopener noreferrer">Wok</a>
-        </li>
-        <li>
-          <a href="https://flecorps.github.io/recipes.html" target="_new" rel="noopener noreferrer">Recipes...</a>
-          </li>
-      </ul>
-    </section>
-    <section>
-      <h3>Arts</h3>
-      <ul>
-        <li>
-          <a href="https://floor96.com/" target="_new" rel="noopener noreferrer">Floor96</a>
-        </li>
-        <li>
-          <a href="https://www.kodo7.com/" target="_new" rel="noopener noreferrer">Kodo7</a>
-        </li>
-        <li>
-          <a href="https://tangiblemediacollection.com/" target="_new" rel="noopener noreferrer">Tangible Media</a>
-        </li>
-        <li>
-          <a href="hhttps://artvee.com/" target="_new" rel="noopener noreferrer">Artvee</a>
-        </li>
-        <li>
-          <a href="https://woodgears.ca/" target="_new" rel="noopener noreferrer">Woodworking</a>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h3>Cars</h3>
-      <ul>
-        <li>
-          <a href="https://www.roadandtrack.com/" target="_new" rel="noopener noreferrer">Road & Track</a>
-        </li>
-        <li>
-          <a href="https://jalopnik.com/" target="_new" rel="noopener noreferrer">Jalopnik</a>
-        </li>
-        <li>
-          <a href="https://monochrome-watches.com/sections/the-petrolhead-corner/" target="_new" rel="noopener noreferrer">Petrolhead</a>
-        </li>  
-        <li>
-          <a href="https://petrolicious.com/" target="_new" rel="noopener noreferrer">Petrolicious</a>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h3>Music</h3>
-      <ul>
-        <li>
-          <a href="https://lend-me-your-ears.specr.net/" target="_new" rel="noopener noreferrer">Ears</a>
-        </li>
-        <li>
-          <a href="https://www.umaro.app/" target="_new" rel="noopener noreferrer">Umaro</a>
-        </li>
-        <li>
-          <a href="https://midiano.com/" target="_new" rel="noopener noreferrer">Midiano</a>
-        </li>
-        <li>
-          <a href="https://www.jongmah.com/" target="_new" rel="noopener noreferrer">Mahjong</a>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h3>Utils</h3>
-      <ul>
-          <li>
-            <a href="https://fmhy.net" target="_new" rel="noopener noreferrer">FMHY</a>
-          </li>
-          <li>
-            <a href="https://github.com/antonmedv/textarea" target="_new" rel="noopener noreferrer">TextArea</a>
-          </li>
-          <li>
-            <a href="https://www.deepl.com/translator" target="_new" rel="noopener noreferrer">DeepL</a>
-          </li>
-        <li>
-          <a href="https://www.cnrtl.fr/definition/" target="_new" rel="noopener noreferrer">French</a>
-        </li>
-        <li>
-          <a href="https://monosketch.io/" target="_new" rel="noopener noreferrer">Sketch (Browser)</a>
-        </li>
-        <li>
-          <a href="https://spotless.neocities.org/" target="_new" rel="noopener noreferrer">Spotless</a>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h3>Shops</h3>
-      <ul>
-        <li>
-          <a href="https://toppreise.ch/" target="_new" rel="noopener noreferrer">Toppreise (CH)</a>
-        </li>
-        <li>
-          <a href="https://galaxus.ch/" target="_new" rel="noopener noreferrer">Galaxus (CH)</a>
-        </li>
-        <li>
-          <a href="https://www.apfelkiste.ch/" target="_new" rel="noopener noreferrer">Apfelkiste (CH)</a>
-        </li>
-        <li>
-          <a href="https://notmadeinchina.directory/" target="_new" rel="noopener noreferrer">Not Made in China</a>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h3>Games</h3>
-      <ul>
-        <li>
-          <a href="https://wallsmash.com/" target="_new" rel="noopener noreferrer">Wallsmash :-)</a>
-        </li>
-        <li>
-          <a href="https://mrdoob.github.io/three-descent/" target="_new" rel="noopener noreferrer">Descent (Browser)</a>
-        </li>
-      </ul>
-    </section>
-    
-  </div>
-</body>
+    <body>
+        <div class="div-links">
+            <section>
+                <h3>News</h3>
+                <ul>
+                    <li>
+                        <a
+                            href="https://swissinfo.ch/"
+                            rel="noopener noreferrer"
+                            >Swiss Info</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://theguardian.com/"
+                            rel="noopener noreferrer"
+                            >Guardian</a
+                        >
+                    </li>
+                    <li class="no-phones">
+                        <a
+                            href="https://www.teletext.ch/RTSUn/100"
+                            rel="noopener noreferrer"
+                            >Teletext</a
+                        >
+                    </li>
+                    <li class="only-phones">
+                        <a
+                            href="http://wwwm.teletext.ch/RTSUn/100"
+                            rel="noopener noreferrer"
+                            >Teletext</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://lepoint.fr/" rel="noopener noreferrer"
+                            >Le Point</a
+                        >
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Tech</h3>
+                <ul>
+                    <li>
+                        <a
+                            href="https://news.ycombinator.com/"
+                            rel="noopener noreferrer"
+                            >HN</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://skimfeed.com/"
+                            rel="noopener noreferrer"
+                            >Skimfeed</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://solar.lowtechmagazine.com"
+                            rel="noopener noreferrer"
+                            >Low Tech</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://mechanical-library.org/"
+                            rel="noopener noreferrer"
+                            >Mech Lib</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://lineageos.org/"
+                            rel="noopener noreferrer"
+                            >LineageOS</a
+                        >
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Science</h3>
+                <ul>
+                    <li>
+                        <a
+                            href="https://ciechanow.ski/"
+                            rel="noopener noreferrer"
+                            >Physics for all</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://matthias-research.github.io/pages/tenMinutePhysics/index.html"
+                            rel="noopener noreferrer"
+                            >10' Physics</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.3blue1brown.com/"
+                            rel="noopener noreferrer"
+                            >Maths & Phys</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://jp-petit.org/"
+                            rel="noopener noreferrer"
+                            >JP Petit</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.feynmanlectures.caltech.edu/"
+                            rel="noopener noreferrer"
+                            >Feynman lectures</a
+                        >
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Long Read</h3>
+                <ul>
+                    <li>
+                        <a href="https://tetw.org/" rel="noopener noreferrer"
+                            >Great Articles</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://pluralistic.net/"
+                            rel="noopener noreferrer"
+                            >Pluralistic</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.monde-diplomatique.fr/"
+                            rel="noopener noreferrer"
+                            >Monde Diplo</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://thewalrus.ca/"
+                            rel="noopener noreferrer"
+                            >The Walrus</a
+                        >
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Media</h3>
+                <ul>
+                    <li>
+                        <a
+                            href="https://flixtor.to/home/"
+                            rel="noopener noreferrer"
+                            >Flixtor</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://wikitok.net/" rel="noopener noreferrer"
+                            >WikiTok</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.rtl.fr/programmes/l-oeil-de"
+                            rel="noopener noreferrer"
+                            >Caveriviere</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.youtube.com/@alexistramoni"
+                            rel="noopener noreferrer"
+                            >Tramoni</a
+                        >
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Books</h3>
+                <ul>
+                    <li>
+                        <a href="https://z-lib.is/" rel="noopener noreferrer"
+                            >Free Books</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://catalogue.bnf.fr/index.do"
+                            rel="noopener noreferrer"
+                            >BNF</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.bookseriesinorder.com/"
+                            rel="noopener noreferrer"
+                            >Books in order</a
+                        >
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Bouffe</h3>
+                <ul>
+                    <li>
+                        <a
+                            href="https://www.ricardocuisine.com/"
+                            rel="noopener noreferrer"
+                            >West</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.lesrecettesdevirginie.com/"
+                            rel="noopener noreferrer"
+                            >Europe</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.justonecookbook.com/recipes/"
+                            rel="noopener noreferrer"
+                            >Japan/Corea</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="http://misstamkitchenette.com/"
+                            rel="noopener noreferrer"
+                            >Vietnam</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://thewoksoflife.com/"
+                            rel="noopener noreferrer"
+                            >Wok</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://flecorps.github.io/recipes.html"
+                            rel="noopener noreferrer"
+                            >Recipes...</a
+                        >
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Arts</h3>
+                <ul>
+                    <li>
+                        <a href="https://floor96.com/" rel="noopener noreferrer"
+                            >Floor96</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.kodo7.com/"
+                            rel="noopener noreferrer"
+                            >Kodo7</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://tangiblemediacollection.com/"
+                            rel="noopener noreferrer"
+                            >Tangible Media</a
+                        >
+                    </li>
+                    <li>
+                        <a href="hhttps://artvee.com/" rel="noopener noreferrer"
+                            >Artvee</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://woodgears.ca/"
+                            rel="noopener noreferrer"
+                            >Woodworking</a
+                        >
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Cars</h3>
+                <ul>
+                    <li>
+                        <a
+                            href="https://www.roadandtrack.com/"
+                            rel="noopener noreferrer"
+                            >Road & Track</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://jalopnik.com/"
+                            rel="noopener noreferrer"
+                            >Jalopnik</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://monochrome-watches.com/sections/the-petrolhead-corner/"
+                            rel="noopener noreferrer"
+                            >Petrolhead</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://petrolicious.com/"
+                            rel="noopener noreferrer"
+                            >Petrolicious</a
+                        >
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Music</h3>
+                <ul>
+                    <li>
+                        <a
+                            href="https://lend-me-your-ears.specr.net/"
+                            rel="noopener noreferrer"
+                            >Ears</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.umaro.app/"
+                            rel="noopener noreferrer"
+                            >Umaro</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://midiano.com/" rel="noopener noreferrer"
+                            >Midiano</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.jongmah.com/"
+                            rel="noopener noreferrer"
+                            >Mahjong</a
+                        >
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Utils</h3>
+                <ul>
+                    <li>
+                        <a href="https://fmhy.net" rel="noopener noreferrer"
+                            >FMHY</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://github.com/antonmedv/textarea"
+                            rel="noopener noreferrer"
+                            >TextArea</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.deepl.com/translator"
+                            rel="noopener noreferrer"
+                            >DeepL</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.cnrtl.fr/definition/"
+                            rel="noopener noreferrer"
+                            >French</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://monosketch.io/"
+                            rel="noopener noreferrer"
+                            >Sketch (Browser)</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://spotless.neocities.org/"
+                            rel="noopener noreferrer"
+                            >Spotless</a
+                        >
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Shops</h3>
+                <ul>
+                    <li>
+                        <a
+                            href="https://toppreise.ch/"
+                            rel="noopener noreferrer"
+                            >Toppreise (CH)</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://galaxus.ch/" rel="noopener noreferrer"
+                            >Galaxus (CH)</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://www.apfelkiste.ch/"
+                            rel="noopener noreferrer"
+                            >Apfelkiste (CH)</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://notmadeinchina.directory/"
+                            rel="noopener noreferrer"
+                            >Not Made in China</a
+                        >
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Games</h3>
+                <ul>
+                    <li>
+                        <a
+                            href="https://wallsmash.com/"
+                            rel="noopener noreferrer"
+                            >Wallsmash (browser)</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://mrdoob.github.io/three-descent/"
+                            rel="noopener noreferrer"
+                            >Descent (Browser)</a
+                        >
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </body>
+</html>
